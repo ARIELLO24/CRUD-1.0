@@ -1,0 +1,41 @@
+# Criar uma task (POST)
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "Estudar Node.js",
+    "description": "Focar no Express e TypeORM",
+    "userId": 1
+}
+
+###
+
+# Listar todas as tasks (GET)
+GET http://localhost:3000/tasks
+
+###
+
+# Listar tasks do usuário 1 com paginação (GET)
+GET http://localhost:3000/users/1/tasks?page=1&limit=20
+
+###
+
+# Buscar task pelo id 5 (GET)
+GET http://localhost:3000/tasks/5
+
+###
+
+# Atualizar task com id 5 (PUT)
+PUT http://localhost:3000/tasks/5
+Content-Type: application/json
+
+{
+    "title": "Estudar Node.js avançado",
+    "description": "Incluir testes e deploy",
+    "status": "in progress"
+}
+
+###
+
+# Deletar task com id 5 (DELETE)
+DELETE http://localhost:3000/tasks/5
