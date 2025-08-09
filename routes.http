@@ -3,8 +3,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "adrian",
-    "email": "email@test.com"
+    "name": "ariel",
+    "email": "ariel@test.com"
 }
 
 ###
@@ -19,7 +19,7 @@ PUT http://localhost:3000/users/1
 Content-Type: application/json
 
 {
-    "name": "adrian atualizado",
+    "name": "ariel atualizado",
     "email": "novoemail@test.com"
 }
 
